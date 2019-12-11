@@ -11,6 +11,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * This is pojo class of SearchResults.
+ * 
+ * @author raju
+ *
+ */
 @Setter
 @Getter
 @AllArgsConstructor

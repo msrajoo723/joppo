@@ -31,13 +31,13 @@ public class SearchController {
 		logger.debug("Enter into SearchController.getResult() /search");
 
 		logger.debug("Exit from SearchController.getResult()");
-		return new ResponseEntity<List<SearchResults>>(applicationService.getResults(), HttpStatus.CREATED);
+		return new ResponseEntity<>(applicationService.getResults(), HttpStatus.OK);
 	}
 
-	@PostMapping("/search")
-	public ResponseEntity<SearchResults> getSearchResultsWithFour(@RequestBody SearchRequest searchRequest) {
+	@GetMapping("/search")
+	public ResponseEntity<List<SearchResults>> getSearchResultsWithFour(@RequestBody SearchRequest searchRequest) {
 		logger.debug("Enter into SearchController.getResult() /search");
 		logger.debug("Exit from SearchController.getResult()");
-		return new ResponseEntity<SearchResults>(new SearchResults(), HttpStatus.CREATED);
+		return new ResponseEntity<>(applicationService.getResults(), HttpStatus.OK);
 	}
 }
