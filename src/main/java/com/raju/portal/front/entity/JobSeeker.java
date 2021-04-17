@@ -1,4 +1,4 @@
-package com.raju.portal.front.pojo;
+package com.raju.portal.front.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
